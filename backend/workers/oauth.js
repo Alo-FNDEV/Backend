@@ -27,11 +27,11 @@ app.all("/account/api/oauth/token", (req, res) => {
     var displayName = "";
 
     if (req.body.username == undefined || !req.body.username) {
-       displayName = "Alo";
-    }else{
+        displayName = "Alo";
+    } else {
         if (req.body.username.includes("@")) {
             displayName = req.body.username.split("@")[0]
-        }else{
+        } else {
             displayName = req.body.username;
         }
     }
