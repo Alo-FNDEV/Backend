@@ -17,6 +17,12 @@ function grabby(app) {
             }
         }
      })
+     app.get('*', function (req, res) {
+        res.status(404).json({
+            "errorCode": "errors.com.epicgames.page.not_found",
+            "message": "Bro has no iq"
+        })
+    });
     })
 }
 
