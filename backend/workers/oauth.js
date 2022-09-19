@@ -24,15 +24,18 @@ app.get("/account/api/oauth/verify", (req, res) => {
 })
 
 app.all("/account/api/oauth/token", (req, res) => {
-    var displayName = "";
+    var displayName = req.body.username;
+    
 
-    if (req.body.username == undefined || !req.body.username) {
+    if (displayName== undefined || !displayName) {
         displayName = "Alo";
     } else {
-        if (req.body.username.includes("@")) {
-            displayName = req.body.username.split("@")[0]
+        if (displayName.includes("@")) {
+            console.log(displayName)
+            displayName = displayName.split("@")[0]
         } else {
-            displayName = req.body.username;
+            displayName = displayName;
+            console.log(displayName)
         }
     }
     res.json({
