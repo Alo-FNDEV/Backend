@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< Updated upstream
-     "build": "tsc --build tsconfig.json",
-    "start": "node dist/main.js",
-=======
     "start": "node ."
->>>>>>> Stashed changes
   },
   "author": "ALO",
   "license": "ISC",
