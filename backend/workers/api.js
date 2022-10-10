@@ -1,4 +1,4 @@
-import express from "express"
+const express = require("express")
 const app = express.Router();
 
 app.get("/account/api/public/account/:accountId", async (req, res) => {

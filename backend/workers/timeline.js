@@ -1,18 +1,18 @@
-import express from "express"
+const express = require("express")
 const app = express.Router();
 
 app.get("/fortnite/api/calendar/v1/timeline", function (req, res) {
-    var season = "0";
+    var season = 0;
     var useragent = req.headers["user-agent"];
 
     if (useragent) {
         try {
             season = useragent.split("-")[1].split(".")[0]
         } catch {
-            season = "1";
+            season = 1;
         }
     } else {
-        season = "1";
+        season = 1;
     }
 
     res.json({

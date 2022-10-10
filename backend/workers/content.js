@@ -1,8 +1,8 @@
-import express from "express"
+const express = require("express")
 const app = express.Router();
 
 app.get(["/content/api/pages/fortnite-game", "/content/app/pages/"], (req, res) => {
-    var season = "0";
+    var season = 0;
     var useragent = req.headers["user-agent"];
 
     if (useragent) {

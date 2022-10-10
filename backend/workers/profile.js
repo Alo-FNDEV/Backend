@@ -1,4 +1,4 @@
-import express from "express"
+const express = require("express")
 const app = express.Router();
 
 app.all("/fortnite/api/game/v2/profile/:accountId/*/:command", (req, res) => {
