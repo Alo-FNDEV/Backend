@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "node --loader ts-node/esm index.ts"
+    "start": "node .",
   },
   "author": "ALO",
   "license": "ISC",
