@@ -6,14 +6,14 @@ function grabby(app) {
             if (err) {
                 console.log(err)
             } else {
-                if (mainFiles.endsWith(".js")) {
+                if (mainFiles.endsWith(".ts")) {
                     try {
                         app.use(require(`../workers/${mainFiles}`))
                     } catch (err) {
                         console.log(`Sorry, ${mainFiles} Failed To Load, Err: ${err}`)
                     }
                 } else {
-                    console.log(`Sorry, ${mainFiles} Failed To Load Please make sure it ends with .js`)
+                    console.log(`Sorry, ${mainFiles} Failed To Load Please make sure it ends with .ts`)
                 }
             }
         })
