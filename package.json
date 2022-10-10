@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "node .",
+     "build": "tsc --build tsconfig.json",
+    "start": "node dist/main.js",
   },
   "author": "ALO",
   "license": "ISC",
