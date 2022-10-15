@@ -1,6 +1,6 @@
 # Open Soured Backend
 
-api.alofn.ml
+api.alofn.ml - yes
 
 # Status
 
